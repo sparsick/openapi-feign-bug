@@ -129,8 +129,8 @@
                             </inputSpec>
                             <generatorName>java</generatorName>
                             <library>feign</library>
-                            <apiPackage>de.github.sparsick.openapi.feign.bug.api</apiPackage>
-                            <modelPackage>de.github.sparsick.openapi.openapi.feign.bug.model</modelPackage>
+                            <apiPackage>com.github.sparsick.openapi.feign.bug.api</apiPackage>
+                            <modelPackage>com.github.sparsick.openapi.feign.bug.model</modelPackage>
                         </configuration>
                     </execution>
                 </executions>

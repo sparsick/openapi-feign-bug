@@ -14,6 +14,12 @@
     </properties>
 
     <dependencies>
+<!--        <dependency>-->
+<!--            <groupId>com.github.sparsick.openapi.feign.bug</groupId>-->
+<!--            <artifactId>client</artifactId>-->
+<!--            <version>${project.version}</version>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -92,10 +98,15 @@
                         <configuration>
                             <inputSpec>${project.build.directory}/maven-shared-archive-resources/public/openapi.yaml</inputSpec>
                             <generatorName>spring</generatorName>
+
 <!--                            <generateSupportingFiles>false</generateSupportingFiles>-->
                             <supportingFilesToGenerate>ApiUtil.java</supportingFilesToGenerate>
                             <apiPackage>com.github.sparsick.openapi.feign.bug.api</apiPackage>
                             <modelPackage>com.github.sparsick.openapi.feign.bug.model</modelPackage>
+                            <configOptions>
+                                <interfaceOnly>true</interfaceOnly>
+                                <skipDefaultInterface>true</skipDefaultInterface>
+                            </configOptions>
                         </configuration>
                     </execution>
                 </executions>
