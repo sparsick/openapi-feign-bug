@@ -14,12 +14,18 @@
     </properties>
 
     <dependencies>
-<!--        <dependency>-->
-<!--            <groupId>com.github.sparsick.openapi.feign.bug</groupId>-->
-<!--            <artifactId>client</artifactId>-->
-<!--            <version>${project.version}</version>-->
-<!--            <scope>test</scope>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>com.github.sparsick.openapi.feign.bug</groupId>
+            <artifactId>client</artifactId>
+            <version>${project.version}</version>
+            <scope>test</scope>
+            <exclusions>
+                <exclusion>
+                    <artifactId>json</artifactId>
+                    <groupId>org.json</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -101,8 +107,8 @@
 
 <!--                            <generateSupportingFiles>false</generateSupportingFiles>-->
                             <supportingFilesToGenerate>ApiUtil.java</supportingFilesToGenerate>
-                            <apiPackage>com.github.sparsick.openapi.feign.bug.api</apiPackage>
-                            <modelPackage>com.github.sparsick.openapi.feign.bug.model</modelPackage>
+                            <apiPackage>com.github.sparsick.openapi.feign.bug.server.api</apiPackage>
+                            <modelPackage>com.github.sparsick.openapi.feign.bug.server.model</modelPackage>
                             <configOptions>
                                 <interfaceOnly>true</interfaceOnly>
                                 <skipDefaultInterface>true</skipDefaultInterface>

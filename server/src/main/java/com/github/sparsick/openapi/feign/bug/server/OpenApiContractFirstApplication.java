@@ -1,4 +1,4 @@
-package com.github.sparsick.openapi.feign.bug;
+package com.github.sparsick.openapi.feign.bug.server;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package com.github.sparsick.openapi.feign.bug.model;
+package com.github.sparsick.openapi.feign.bug.server.model;
 
 public class OneOfFishMammal {
 

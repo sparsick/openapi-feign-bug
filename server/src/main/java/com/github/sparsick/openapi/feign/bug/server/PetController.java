@@ -1,9 +1,9 @@
-package com.github.sparsick.openapi.feign.bug;
+package com.github.sparsick.openapi.feign.bug.server;
 
-import com.github.sparsick.openapi.feign.bug.api.PetApi;
-import com.github.sparsick.openapi.feign.bug.model.Fish;
-import com.github.sparsick.openapi.feign.bug.model.OneOfFishMammal;
-import com.github.sparsick.openapi.feign.bug.model.Pet;
+import com.github.sparsick.openapi.feign.bug.server.api.PetApi;
+import com.github.sparsick.openapi.feign.bug.server.model.Fish;
+import com.github.sparsick.openapi.feign.bug.server.model.OneOfFishMammal;
+import com.github.sparsick.openapi.feign.bug.server.model.Pet;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RestController;
